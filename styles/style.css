@@ -130,10 +130,11 @@ background: rgba(255, 255, 255, 0.1);
   .normal-btn{
     box-sizing: border-box;
 border: 1px solid rgb(255, 255, 255);
-border-radius: 250px;
+border-radius: 20px;
 padding: 5px;
 background-color: black;
 color: white;
+font-size: 1.1rem;
 
 
   }
@@ -142,6 +143,79 @@ color: white;
     font-size: 3rem;
     color: white;
   }
+
+/* habit section start here  */
+.habit-wrapper{
+  background-color: black;
+}
+
+.habit-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.habit-text{
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.habit-title{
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+.habit-description{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+}
+.habit-image-container{
+  width: 1044px;
+  height: 274px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 0 auto;
+}
+.habit-card{
+  width: 231px;
+  height: 274px;
+  text-align: center;
+  padding: 8px;
+}
+.habit-card img{
+  border-radius: 50%;
+}
+.image-title{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+.image-description{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* responsive area start here  */
   @media screen and (max-width: 576px){
     .hero-container{
@@ -179,6 +253,27 @@ color: white;
     .hero-image-content{
       margin-top: 0px;
     }
+    .habit-image-container{
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+    .habit-container{
+      width: 100%;
+      height: auto;
+      padding: 0px 0px;
+    }
+    .habit-card{
+      width: 100%;
+      height: auto;
+      padding: 5px;
+    }
+    .habit-card img{
+      width: 70%;
+      height: auto;
+    }
+
   }
   
   
