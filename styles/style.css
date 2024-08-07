@@ -30,7 +30,11 @@
   /* defoult style here end here */
   /* hero content start here  */
   .header-wrapper{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(41,40,40,1) 40%, rgba(47,44,44,1) 50%, rgba(36,36,36,1) 60%, rgba(0,0,0,1) 100%);
+
+
   }
   .header{
       max-width: 1200px;
@@ -42,14 +46,25 @@
       align-items: center;
       gap: 10px;
       justify-content: space-between;
+      padding-top: 30px;
   }
   .nav-links{
       display: flex;
-      gap: 30px;
-      justify-content: space-evenly;
+      gap: 20px;
+      justify-content: space-between;
+      width: 410px;
+      height: 40px;
+      box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 39px;
+filter: blur(30%);
+
+
   }
   .btn-normal{
       color: white;
+      padding-top: 5px;
+      font-size:1rem ;
   }
   .nav-title{
       color: white;
@@ -58,18 +73,20 @@
     color: rgb(230, 83, 60);
   }
   .hero-title{
-      font-size: 4rem;
+      font-size: 4.5rem;
       color: white;
+      padding-bottom: 10px;
   }
   .hero-description{
       font-size: 1rem;
-      color: white;
+      color: rgba(255, 255, 255, 0.741);
       margin-bottom: 20px;
   }
   .hero-container{
       display: flex;
-      gap: 7rem;
+      gap: 13rem;
       max-width: 1200px;
+      
   }
   .hero-content{
       margin-top: 120px;
@@ -91,7 +108,8 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 65%;
+    left: -10%;
     width: 210px;
     height: 90px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -105,8 +123,8 @@ background: rgba(255, 255, 255, 0.1);
     position: absolute;
     width: 200px;
     height: 96px;
-    top: 20%;
-    left: 40%;
+    top: 25%;
+    left: 60%;
     border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 12px;
 backdrop-filter: blur(20px);
@@ -114,15 +132,18 @@ background: rgba(255, 255, 255, 0.1);
 
   }
   .hero-image-content{
-    width: 47%;
+    width: 35%;
     margin-top: 30px;
     position: relative;
     
   }
+  .hero-image-content img{
+    width: 100%;
+  }
   .btn-primary{
     background-color:rgb(230, 83, 60) ;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 10px 10px;
+    border-radius: 30px;
     font-size: 1.1rem;
     color: white;
 
@@ -135,6 +156,7 @@ padding: 5px;
 background-color: black;
 color: white;
 font-size: 1.1rem;
+filter: blur(30%);
 
 
   }
@@ -142,6 +164,7 @@ font-size: 1.1rem;
     display: none;
     font-size: 3rem;
     color: white;
+    
   }
 
 /* habit section start here  */
@@ -162,14 +185,16 @@ font-size: 1.1rem;
   padding-bottom: 30px;
 }
 .habit-title{
-  font-size: 3rem;
+  font-size: 2.1rem;
   font-weight: 900;
   color: white;
+  padding-bottom: 10px;
 }
 .habit-description{
   font-size: 0.9rem;
   font-weight: 400;
   color: white;
+  padding-bottom: 10px;
 }
 .habit-image-container{
   width: 1044px;
@@ -195,9 +220,75 @@ font-size: 1.1rem;
 }
 .image-description{
   font-size: 0.9rem;
-  font-weight: 400;
-  color: white;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.729);
+  padding: 5px 10px 5px 10px;
+  
 }
+/* habit container end here  */
+/* banner container start here  */
+.main-container{
+  background-color: black;
+}
+
+.container{
+  max-width: 1300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.banner-container{
+  display: flex;
+  width: 1000px;
+  height: 300px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: rgba(99, 103, 103, 0.644);
+  
+  
+  gap: 20px;
+  
+  
+}
+.hide{
+  display: none;
+}
+.banner-image img{
+  width: 400px;
+  height: 300px;
+  border-radius: 40px;
+  padding: 4px;
+}
+.banner-content{
+  width:400px ;
+  height:300px ;
+  
+  border-radius:40px ;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.banner-title{
+  color: white;
+  padding-bottom: 10px;
+}
+.banner-description{
+  color: rgba(255, 255, 255, 0.807);
+  padding: 5px 5px;
+}
+#banner-btn{
+  padding: 5px 5px;
+  width: 224px;
+height: 54px;
+border: none;
+}
+/* banner container end here  */
 
 
 
@@ -225,12 +316,26 @@ font-size: 1.1rem;
     }
     .nav-links{
       display: none;
+      
     }
     .ham-barger{
       display: block;
+      text-align: right;
+    }
+    .hero-title{
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 2rem;
+  
+    }
+    .hero-description{
+      text-align: left;
+      padding: 5px 5px 5px 5px;
+      font-size: 0.8rem;
     }
     .hero-content, .hero-image-content{
-      width: 98%;
+      width: 100%;
       height: auto;
       text-align: center;
       margin-bottom: 0px;
@@ -242,12 +347,16 @@ font-size: 1.1rem;
       width: 48%;
       height: auto;
       top: 70%;
+      left: 3%;
     }
     .text{
       width: 48%;
       height: auto;
       top: 20%;
       left: 50%;
+    }
+    .btn-container{
+      display: flex;
     }
 
     .hero-image-content{
@@ -272,6 +381,33 @@ font-size: 1.1rem;
     .habit-card img{
       width: 70%;
       height: auto;
+    }
+    *{
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+    .banner-container{
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 20px;
+    }
+    .banner-content, .banner-image img{
+      width: 100%;
+      height: auto;
+      text-align: left;
+    }
+    .container{
+      width: 100%;
+      /* height: 120%; */
+      height: auto;
+      
+    }
+    #banner-btn{
+      width: 95%;
+      /* height: auto; */
+      
     }
 
   }
