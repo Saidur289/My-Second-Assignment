@@ -61,16 +61,18 @@
       box-sizing: border-box;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 39px;
-filter: blur(30%);
+filter: blur(0.1px);
 
 
   }
   #nav-btn{
-    padding: 8px 20px 8px 20px;
+    padding: 10px 20px 10px 20px;
     font-size:0.8rem ;
-    margin: 0px 10px;
+    margin: 0px 5px;
     border: none;
     background-color:rgb(230, 83, 60) ;
+    border-radius: 30px;
+    color: white;
      
   }
   .btn-normal{
@@ -308,6 +310,10 @@ padding: 16px 30px 16px 30px;
   padding-bottom: 20px;
   letter-spacing: 0.3px;
   font-weight: 400;
+}
+.btn-trainer{
+  display: flex;
+  justify-content: left;
 }
 #banner-btn{
   padding: 5px 5px;
@@ -572,7 +578,74 @@ padding-bottom: 50px;
   text-align: left;
 }
 /* trainer end here  */
+/* footer start here  */
+.footer-container{
+  background: rgb(34, 34, 34);
 
+}
+.footer-main-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.fitness-container{
+  width: 940px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+  justify-content: space-evenly;
+  padding: 10px 10px ;
+
+}
+.fitness-container1{
+padding: 5px 0px;
+
+}
+
+.title{
+  color: red;
+  font-weight: 700;
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+.footer-description{
+  color: rgba(255, 255, 255, 0.622);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.container-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+.container-description{
+  font-size: 1rem;
+  font-weight: 500;
+color: rgba(255, 255, 255, 0.629);
+padding: 5px;
+}
+hr{
+  margin-left: 150px;
+  margin-right: 180px;
+  font-size: 2rem;
+
+}
+.reserved{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/* footer style end here  */
 
 
 
@@ -802,6 +875,33 @@ padding-bottom: 50px;
   }
   #child-4{
     display: none;
+  } .footer-main-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+  }
+  hr{
+    margin: 0 0px;
+  }
+  .fitness-container1, .fitness-container2, .fitness-container3{
+    width: 100%;
+    height: auto;
+  }
+  .reserved{
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }.container-title{
+    padding-bottom: 10px;
+  }.container-description{
+  padding: 10px;
+  }.footer-description{
+    padding-bottom: 15px;
+  }
+  hr{
+    /* margin-left: 20px;
+    margin-right: 30px; */
+  margin: 0 auto;
   }
   
 
